@@ -1,0 +1,283 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    background-image: url(../IMAGENES/BG\ CALA.jpg);
+}
+
+/*Nav*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../IMAGENES/LogoCALAFULLnew.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-bottom: thick double #fff;
+}
+nav{
+   display: flex;
+   padding: 2% 6%;
+   justify-content: space-between;
+   align-items: center;
+}
+
+nav img{
+    width: 150px; 
+}
+
+nav .nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+
+nav .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+nav .nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+nav .nav-links ul li a:hover{
+    background: #fff;
+    border-radius: 25px;
+    display: block;
+}
+
+nav .nav-links ul li a:hover{
+    color: #333;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media (max-width: 700px){
+
+    nav img{
+        margin-top: 10px;
+        width: 100px; 
+    }
+
+    .text-box{
+        font-size: 20px;
+    }
+
+    nav .nav-links ul li{
+        display: block;
+    }
+
+    nav .nav-links ul li a{
+        display: flex;
+        justify-content: left;
+        text-align: left;
+    }
+
+    nav .nav-links{
+        position: absolute;
+        background: #333;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10%;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{
+        padding: 30px 0px 0 0;
+    }
+}
+
+/*Gallery*/
+body .order{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    border-bottom: thick double #fff;
+}
+body .gallery{
+    width: 55%;
+    text-align: center;
+    margin: 25px;
+}
+
+body .gallery img{
+    height: 300px;
+    width: 316px;
+    height: auto;
+    margin: 7px;
+    border: solid #775645;
+    border-radius: 20px;
+    transition: 0.3s ease-out;
+}
+
+body .gallery img:hover{
+    transform: scale(1.1)
+}
+
+@media (max-width: 700px){
+    html{
+        background-image: url(../IMAGENES/BG\ CALA.jpg);
+    }
+
+    body .order{
+        display: flex;
+        justify-content: center;
+        min-height: 100%;
+        width: 50%;
+    }
+
+    body .gallery{
+        width: 25%;
+        text-align: center;
+        margin: 25px;
+    }
+
+    body .gallery img{
+        width: 206px;
+        height: auto;
+        margin: 7px;
+}
+}
+
+/*Footer Social*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.wrapper .button{
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    margin: 35px 0 0 0;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button .icon{
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 80px;
+    transition: all 0.3s ease-out;
+} 
+
+.wrapper .button:hover{
+    width: 400px;
+}
+
+.wrapper .button:nth-child(1):hover .icon{
+    background: #8a3ab9;
+}
+
+.wrapper .button:nth-child(2):hover .icon{
+    background: #4267B2;
+}
+
+.wrapper .button .icon i{
+    font-size: 40px;
+    line-height: 80px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover .icon i{
+    color: #fff;
+}
+
+
+.wrapper .button span{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 80px;
+    margin-left: 20px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1) span{
+    color: #8a3ab9;
+}
+
+.wrapper .button:nth-child(2) span{
+    color: #4267B2;
+}
+
+@media (max-width: 700px){
+    .social h1{
+        color: #fff;
+        text-align: center;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .wrapper .button{
+        width: 400px;
+    }
+
+    .wrapper .button .icon{
+        display: inline-block;
+        height: 80px;
+        width: 80px;
+        text-align: center;
+        border-radius: 50px;
+        box-sizing: border-box;
+        line-height: 80px;
+        color: #4267B2;
+    } 
+
+    .wrapper .button:nth-child(2) .icon{
+        display: inline-block;
+        height: 80px;
+        width: 80px;
+        text-align: center;
+        border-radius: 50px;
+        box-sizing: border-box;
+        line-height: 80px;
+        color: #8a3ab9;
+    } 
+
+    .wrapper .button span{
+        font-size: 42px;
+}
+}
+
+
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styleCala.css">
+    <link rel="stylesheet" href="./css/lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="./js/lightbox-plus-jquery.min.js"></script>
+    <title>Cala</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <img src="./IMAGENES/IMAGEN3.png">
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#OurClients">Our Clients</a>
+                        </li>
+                        <li>
+                            <a href="#ContactUs">Contacts Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById('navLinks');
+
+        function showmenu(){
+            navLinks.style.right="0";
+        }
+        function hidemenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+    <div class="order">
+        <div class="gallery">
+            <a href="./IMAGENES/CALA 1.jpg" data-lightbox="mygallery"><img src="./IMAGENES/CALA 1.jpg"></a>
+            <a href="./IMAGENES/CALA 2.jpg" data-lightbox="mygallery"><img src="./IMAGENES/CALA 2.jpg"></a>
+            <a href="./IMAGENES/CALA 3.jpg" data-lightbox="mygallery"><img src="./IMAGENES/CALA 3.jpg"></a>
+            <a href="./IMAGENES/CALA 4.jpg" data-lightbox="mygallery"><img src="./IMAGENES/CALA 4.jpg"></a>
+            <a href="./IMAGENES/CALA 5.jpg" data-lightbox="mygallery"><img src="./IMAGENES/CALA 5.jpg"></a>
+            <a href="./IMAGENES/CALA 6.jpg" data-lightbox="mygallery"><img src="./IMAGENES/CALA 6.jpg"></a>
+            <a href="./IMAGENES/CALA 7.jpg" data-lightbox="mygallery"><img src="./IMAGENES/CALA 7.jpg"></a>
+            <a href="./IMAGENES/CALA 8.jpg" data-lightbox="mygallery"><img src="./IMAGENES/CALA 8.jpg"></a>
+            <a href="./IMAGENES/CALA 9.jpg" data-lightbox="mygallery"><img src="./IMAGENES/CALA 9.jpg"></a>
+            <a href="./IMAGENES/CALA 10.jpg" data-lightbox="mygallery"><img src="./IMAGENES/CALA 10.jpg"></a>
+            <a href="./IMAGENES/CALA 11.jpg" data-lightbox="mygallery"><img src="./IMAGENES/CALA 11.jpg"></a>
+            <a href="./IMAGENES/CALA 12.jpg" data-lightbox="mygallery"><img src="./IMAGENES/CALA 12.jpg"></a>
+            <a href="./IMAGENES/CALA 13.jpg" data-lightbox="mygallery"><img src="./IMAGENES/CALA 13.jpg"></a>
+            <a href="./IMAGENES/CALA 14.jpg" data-lightbox="mygallery"><img src="./IMAGENES/CALA 14.jpg"></a>
+            <a href="./IMAGENES/CALA 15.jpg" data-lightbox="mygallery"><img src="./IMAGENES/CALA 15.jpg"></a>
+        </div>
+    </div>
+</body>
+<footer>
+    <div>
+        <h1>Puedes ver las redes sociales de nuestras marcas.</h1>
+    </div>
+    <div class="wrapper">
+        <div class="button">
+            <div class="icon"><i class="fab fa-instagram"></i></div>
+            <span>Instagram</span>
+        </div>
+        <div class="button">
+            <div class="icon"><i class="fab fa-facebook-f"></i></div>
+            <span>Facebook</span>
+        </div>
+    </div>
+        
+</footer>
+</html>

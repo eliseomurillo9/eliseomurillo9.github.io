@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;900&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/STYLE.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <img src="./IMAGENES/IMAGEN3.png">
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#OurClients">Our Clients</a>
+                        </li>
+                        <li>
+                            <a href="#ContactUs">Contacts Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+                <div class="text-box">
+                    <h1>Pensa que ponerle</h1>
+                </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById('navLinks');
+
+        function showmenu(){
+            navLinks.style.right="0";
+        }
+        function hidemenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+    <div class="slider-client" id="OurClients">
+        <div class="swiper ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <a href="./cala.html"><img src="./IMAGENES/CALA.jpg"></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://www.instagram.com/calasv_/" target="_blank"><img src="./IMAGENES/HierbaBuenaLogofront.jpg"></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://www.instagram.com/calasv_/" target="_blank"><img src="./IMAGENES/AlfaYOmegaFront.jpg"></a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Swiper JS -->
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          <script src="./js/SLIDE.js"></script>
+    </div>
+</body>
+<footer id="ContactUs">     
+    <div class="social" id="ContactUs">
+        <h1>Let's work together, contact us.</h1>
+        <div class="wrapper">
+            <div class="button">
+                <div class="icon"><i class="fab fa-facebook-f"></i></div>
+                <span>Facebook</span>
+            </div> 
+            <div class="button">
+                <div class="icon"><i class="fab fa-whatsapp"></i></div>
+                <span>WhatsApp</span>
+            </div>     
+        </div>
+    </div>
+</footer>
+</html>
