@@ -23,7 +23,7 @@
                     <i class="fa fa-times" onclick="hidemenu()"></i>
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="">Home</a>
                         </li>
                         <li>
                             <a href="#OurClients">Our Clients</a>
@@ -44,10 +44,10 @@
         var navLinks = document.getElementById('navLinks');
 
         function showmenu(){
-            navLinks.style.right="0";
+            navLinks.style.right="0", navLinks.style.display="";
         }
         function hidemenu(){
-            navLinks.style.right="-200px";
+            navLinks.style.right="-200px", navLinks.style.display="none";
         }
     </script>
     <div class="slider-client" id="OurClients">
